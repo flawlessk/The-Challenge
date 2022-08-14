@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 41</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-41">
+            <g id="Group-47-Copy-6">
+                <rect id="Rectangle-Copy-105" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="64" height="64"></rect>
+                <g id="Group-44-Copy-3" opacity="0.800000012" transform="translate(9.600000, 6.400000)" fill-rule="nonzero">
+                    <path d="M3.19240258,0 L30.3168413,0 L44.6939665,14.3213006 L44.6939665,47.8865342 C44.6939665,49.6502916 43.2638348,51.0789368 41.5015639,51.0789368 L3.19240258,51.0789368 C1.43013161,51.0789368 0,49.6502916 0,47.8865342 L0,3.19240258 C0,1.42864516 1.43029677,0 3.19240258,0 Z" id="Path" fill="#5285CC"></path>
+                    <path d="M44.7022245,14.3658942 L33.5749781,14.3658942 C31.8127071,14.3658942 30.3825755,12.9357626 30.3825755,11.1734916 L30.3825755,0.031876129 L44.7022245,14.3658942 Z" id="Path" fill="#3D6399"></path>
+                </g>
+            </g>
+            <g id="Group-40" transform="translate(20.000000, 22.000000)">
+                <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="24" height="24"></rect>
+                <g id="Group-39" transform="translate(2.000000, 5.000000)" fill="#FFFFFF">
+                    <rect id="Rectangle-Copy-4" x="0" y="12" width="20" height="2" rx="1"></rect>
+                    <rect id="Rectangle-Copy-5" x="0" y="6" width="20" height="2" rx="1"></rect>
+                    <rect id="Rectangle-Copy-6" x="0" y="0" width="14" height="2" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

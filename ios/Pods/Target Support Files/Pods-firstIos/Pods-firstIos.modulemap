@@ -1,0 +1,6 @@
+module Pods_firstIos {
+  umbrella header "Pods-firstIos-umbrella.h"
+
+  export *
+  module * { export * }
+}
