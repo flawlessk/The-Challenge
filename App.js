@@ -15,7 +15,6 @@ const App = () => {
 const styles = StyleSheet.create({
   centered: {
     marginHorizontal: 100,
-    marginVertical: 200
   }
 });
 

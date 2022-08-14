@@ -1,6 +1,6 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import BottomTabNavigator from "./BottomTabNavigator";
+import {BottomTabNavigator} from "./BottomTabNavigator";
 import { Text, View } from "react-native";
 
 const Drawer = createDrawerNavigator();

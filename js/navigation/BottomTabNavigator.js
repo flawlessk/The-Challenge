@@ -3,6 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Text, StyleSheet, View } from 'react-native';
 import { routes, screens } from './routes';
 import Home from '../screens/home/Home';
+import Calendar from '../screens/calendar/Calendar';
+import Gallery from '../screens/gallery/Gallery';
+import Members from '../screens/members/Members';
+import Settings from '../screens/settings/Settings';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,7 +23,7 @@ const tabOptions = ({ route }) => {
   }
 
   return {
-    // tabBarIcon: ({ focused }) => item.icon(focused),
+    tabBarIcon: ({ focused }) => item.icon(focused),
     tabBarLabel: () => <Text style={styles.tabBarLabel}>{`${item.title}` || ''}</Text>,
     headerShown: false,
     tabBarStyle: styles.tabContainer,
@@ -27,14 +31,14 @@ const tabOptions = ({ route }) => {
   };
 };
 
-const BottomTabNavigator = () => {
+export const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator screenOptions={tabOptions}>
+    <Tab.Navigator screenOptions={tabOptions} >
       <Tab.Screen name={screens.HomeStack} component={Home} />
-      {/* <Tab.Screen name={screens.Calendar} component={Calendar} />
-      <Tab.Screen name={screens.Conversation} component={Conversations} />
+      <Tab.Screen name={screens.Calendar} component={Calendar} />
+      <Tab.Screen name={screens.Conversation} component={Gallery} />
       <Tab.Screen name={screens.Members} component={Members} />
-      <Tab.Screen name={screens.BookRoom} component={RoomBookContainer} /> */}
+      <Tab.Screen name={screens.BookRoom} component={Settings} />
     </Tab.Navigator>
   );
 };
@@ -45,8 +49,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   tabContainer: {
-    height: 40,
+    height: 100,
+    marginBottom: 0,
   },
 });
-
-export default BottomTabNavigator;

@@ -9,8 +9,8 @@ import MarketPlace from '../images/bottomTabs/Marketplace.svg';
 import Conversation from '../images/bottomTabs/ChatsActive.svg';
 import Members from '../images/bottomTabs/Members.svg';
 import MembersActive from '../images/bottomTabs/MembersActive.svg';
-import Room from '../images/bottomTabs/room.svg';
-import RoomActive from '../images/bottomTabs/roomActive.svg';
+import Room from '../images/icons/SettingsIcon.svg';
+import RoomActive from '../images/bottomTabs/SettingsIconGreen.svg';
 
 
 
@@ -26,7 +26,7 @@ export const screens = {
     {
       name: screens.HomeStack,
       focusedRoute: screens.HomeStack,
-      title: 'HOME',
+      title: 'Home',
       showInTab: true,
       showInDrawer: false,
       icon: focused =>
@@ -39,7 +39,7 @@ export const screens = {
     {
       name: screens.Calendar,
       focusedRoute: screens.Calendar,
-      title: 'CALENDAR',
+      title: 'Calendar',
       showInTab: true,
       showInDrawer: false,
       icon: focused =>
@@ -65,7 +65,7 @@ export const screens = {
     {
       name: screens.Conversation,
       focusedRoute: screens.Conversation,
-      title: 'CHATS',
+      title: 'Gallery',
       showInTab: true,
       showInDrawer: false,
       icon: focused =>
@@ -78,7 +78,7 @@ export const screens = {
     {
       name: screens.Members,
       focusedRoute: screens.Members,
-      title: 'MEMBERS',
+      title: 'Members',
       showInTab: true,
       showInDrawer: false,
       icon: focused =>
@@ -91,7 +91,7 @@ export const screens = {
     {
       name: screens.BookRoom,
       focusedRoute: screens.BookRoom,
-      title: 'BOOKROOM',
+      title: 'Settings',
       showInTab: true,
       showInDrawer: false,
       icon: focused =>
