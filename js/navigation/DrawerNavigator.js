@@ -12,6 +12,7 @@ const DrawerNavigator = () => {
                 headerShown: false,
                 headerStyle: {
                     height: 150,
+                    
                 },
                 drawerStyle: {
                     width: '100%'
