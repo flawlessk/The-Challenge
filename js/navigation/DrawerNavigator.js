@@ -1,11 +1,21 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import {BottomTabNavigator} from "./BottomTabNavigator";
-import { Text, View } from "react-native";
+import { Text, View, Image, TouchableOpacity, Dimensions } from "react-native";
+import { DrawerActions, useNavigation } from "@react-navigation/native";
+import CloseX from '../images/close.png';
+
 
 const Drawer = createDrawerNavigator();
+const { width, height } = Dimensions.get('window');
 
 const DrawerNavigator = () => {
+    const navigation = useNavigation();
+
+    const CloseDrawer = () => {
+        navigation.dispatch(DrawerActions.closeDrawer());
+    };
+
     return (
         <Drawer.Navigator
             screenOptions={({ navigation }) => ({
@@ -15,19 +25,19 @@ const DrawerNavigator = () => {
                     
                 },
                 drawerStyle: {
-                    width: '100%'
+                    width: width
                 },
             })}
             drawerContent={props => 
-                <View style={{marginVertical: 100, marginHorizontal: 20}}  {...props} >
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                    <Text>awdawdwadaw</Text>
-                </View>}
+                <TouchableOpacity style={{
+                    marginVertical: 60, 
+                    marginHorizontal: 20,
+                    }}  
+                    {...props}
+                    onPress={CloseDrawer} 
+                >
+                    <Image style={{position: "absolute", right: 0, width: 20}} source={CloseX} />
+                </TouchableOpacity>}
         >
             <Drawer.Screen 
                 name={'TabsNavigator'}
